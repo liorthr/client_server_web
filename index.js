@@ -12,7 +12,7 @@ app.listen(process.env.PORT || 3001, () => {
 app.get("/api/:name", (req, res) => {
   res.json({ message: `Hello ${req.params.name}, from server!` });
 });
-
+//add
 // Have Node serve the files for our built React app
 // app.use(express.static(path.resolve(__dirname, "./client/build")));
 app.use(express.static(path.join(__dirname, "/client/build")));
